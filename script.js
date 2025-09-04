@@ -483,8 +483,8 @@ function setupScrollAnimations() {
 function downloadResume() {
     // Create a mock PDF download
     const link = document.createElement('a');
-    link.href = 'Images/Fathima Niloofar Kappil-Resume.pdf'; // In real implementation, this would be a real PDF
-    link.download = 'Fathima Niloofar Kappil-Resume.pdf';
+    link.href = 'Images/Resume.pdf'; // In real implementation, this would be a real PDF
+    link.download = 'Resume.pdf';
     link.click();
     
     // Show a message to the user
