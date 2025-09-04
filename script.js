@@ -65,8 +65,8 @@ const portfolioData = {
             description: "Cross-platform mobile app for tattoo shop, with multiple pages, luxurious layout and smooth navigation",
             image: "Images/tattoo.png",
             technologies: ["Flutter", "Firebase"],
-            appStoreUrl: "#",
-            githubUrl: "#"
+            
+            
         },
         {
             id: 5,
@@ -326,10 +326,6 @@ function renderProjectCategory(projects, containerId) {
                     <a href="${project.liveUrl || project.appStoreUrl || project.playStoreUrl || project.demoUrl || '#'}" class="btn btn-primary">
                         <i class="fas fa-external-link-alt"></i>
                         ${getProjectButtonText(project)}
-                    </a>
-                    <a href="${project.githubUrl}" class="btn btn-secondary">
-                        <i class="fab fa-github"></i>
-                        GitHub
                     </a>
                 </div>
             </div>
