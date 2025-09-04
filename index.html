@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Fathima Niloofar - Web & App Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Fathima Niloofar, a full-stack web and mobile app developer specializing in React, Node.js, and modern web technologies. View my projects, skills, and experience." />
+    <meta property="og:title" content="Fathima Niloofar - Web & App Developer Portfolio" />
+    <meta property="og:description" content="Professional portfolio showcasing web and mobile development projects, skills, and experience in modern technologies." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <div class="logo-container">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">Fathima Niloofar</span>
+                            <span class="logo-title">Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-links desktop-nav">
+                    <a href="#hero" class="nav-link" data-text="Home">
+                        <i class="fas fa-home nav-icon"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#about" class="nav-link" data-text="About">
+                        <i class="fas fa-user nav-icon"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="#projects" class="nav-link" data-text="Projects">
+                        <i class="fas fa-folder-open nav-icon"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#resume" class="nav-link" data-text="Resume">
+                        <i class="fas fa-file-alt nav-icon"></i>
+                        <span>Resume</span>
+                    </a>
+                    <a href="#skills" class="nav-link" data-text="Skills">
+                        <i class="fas fa-cogs nav-icon"></i>
+                        <span>Skills</span>
+                    </a>
+                    <!-- <a href="#certificates" class="nav-link" data-text="Certificates">
+                        <i class="fas fa-certificate nav-icon"></i>
+                        <span>Certificates</span>
+                    </a> -->
+                    <a href="#contact" class="nav-link" data-text="Contact">
+                        <i class="fas fa-envelope nav-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+                <div class="nav-cta">
+                    <button class="btn btn-outline-primary nav-cta-btn" onclick="scrollToSection('contact')">
+                        <i class="fas fa-paper-plane"></i>
+                        Hire Me
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#hero" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user nav-icon"></i>
+                    <span>About</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-folder-open nav-icon"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#resume" class="nav-link">
+                    <i class="fas fa-file-alt nav-icon"></i>
+                    <span>Resume</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-cogs nav-icon"></i>
+                    <span>Skills</span>
+                </a>
+                <!-- <a href="#certificates" class="nav-link">
+                    <i class="fas fa-certificate nav-icon"></i>
+                    <span>Certificates</span>
+                </a> -->
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <span>Contact</span>
+                </a>
+                <button class="btn btn-primary mobile-cta-btn" onclick="scrollToSection('contact')">
+                    <i class="fas fa-paper-plane"></i>
+                    Let's Work Together
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="floating-elements">
+                    <div class="floating-icon"><i class="fab fa-python"></i></div>
+                    <div class="floating-icon"><i class="fab fa-java"></i></div>
+                    <div class="floating-icon"><i class="fas fa-database"></i></div>
+                    <div class="floating-icon"><i class="fab fa-js-square"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge animate-slide-up">
+                    <i class="fas fa-star"></i>
+                    <span>Open to Work</span>
+                </div>
+                
+                <div class="hero-image-container animate-float">
+                    <div class="hero-image-wrapper">
+                        <img src="Images\Personal Logo.png" 
+                             alt="Fathima Niloofar - Professional headshot" 
+                             class="hero-image">
+                        <div class="hero-image-border"></div>
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span>Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-intro">
+                    <h1 class="hero-greeting animate-slide-up">
+                        Hello, I'm <span class="gradient-text">Fathima Niloofar Kappil</span>
+                    </h1>
+                    <h2 class="hero-title animate-slide-up">
+                        Full Stack Developer & 
+                        <span class="typing-text" data-words='["UI/UX Designer", "Tech Enthusiast", "Code Artist"]'>UI/UX Designer</span>
+                    </h2>
+                    <p class="hero-description animate-slide-up">
+                        "I build scalable and<strong> responsive websites </strong>and <strong> cross-platform applications</strong> that empower businesses and engage users.” 
+        
+                    </p>
+                </div>
+
+                <div class="hero-stats animate-fade-in">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Passion for coding</div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons animate-fade-in">
+                    <button class="btn btn-primary btn-large hero-btn-primary" onclick="scrollToSection('projects')">
+                        <span class="btn-text">Explore My Work</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </button>
+                    <button class="btn btn-outline-white btn-large hero-btn-secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-comments btn-icon"></i>
+                        <span class="btn-text">Let's Talk</span>
+                    </button>
+                </div>
+
+                
+
+                <div class="scroll-indicator animate-bounce">
+                    <div class="scroll-text">Scroll to explore</div>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Developer workspace">
+                </div>
+                <div class="about-text">
+                    <p>
+                        I’m a passionate full-stack developer with experience in building both the front-end and back-end of websites and applications. I enjoy crafting scalable, user-friendly solutions that bring ideas to life through clean code and modern design.
+                        My skills span across multiple frameworks, databases, and technologies, enabling me to manage projects end-to-end with efficiency and creativity.
+                    </p>
+                    <p>
+                        Outside of development, I love experimenting with new tools, contributing to side projects, and staying curious about how technology shapes the world around us.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Brampton,ON
+                        </span>
+                        <span class="tag">
+                            <i class="fas fa-coffee"></i>
+                            Coffee Enthusiast
+                        </span>
+                        <span class="tag">
+                            <i class="fas fa-code"></i>
+                            5+ Years Experience
+                        </span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A collection of my recent work showcasing web applications, mobile apps, and creative solutions
+                </p>
+            </div>
+
+            <!-- Web Development Projects -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-globe"></i>
+                    Web Development
+                </h3>
+                <div class="projects-grid" id="webProjects">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-mobile-alt"></i>
+                    Mobile Applications
+                </h3>
+                <div class="projects-grid" id="mobileProjects">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <p class="section-subtitle">A brief overview of my education and professional experience</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-column">
+                    <h3 class="resume-section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    <div id="educationList">
+                        <!-- Education items will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3 class="resume-section-title">
+                        <i class="fas fa-briefcase"></i>
+                        Experience
+                    </h3>
+                    <div id="experienceList">
+                        <!-- Experience items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="resume-download">
+                <button class="btn btn-primary btn-large" onclick="downloadResume()">
+                    <i class="fas fa-download"></i>
+                    Download Full Resume (PDF)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I use to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div id="frontendSkills">
+                        <!-- Frontend skills will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div id="backendSkills">
+                        <!-- Backend skills will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div id="toolsSkills">
+                        <!-- Tools skills will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="tech-icons">
+                <h3>Technologies I Work With</h3>
+                <div class="tech-grid" id="techIcons">
+                    <!-- Tech icons will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <!-- <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-award"></i>
+                    Professional Certificates
+                </h2>
+                <p class="section-subtitle">Continuous learning and professional development</p>
+            </div>
+            <div class="certificates-grid" id="certificatesList">
+                <!-- Certificates will be populated by JavaScript -->
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <footer id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    I'm always interested in new opportunities and exciting projects.
+                    Let's discuss how we can bring your ideas to life.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>fathimaniloofark@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+1 (647) 286-3359</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Brampton, ON</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/fathima-niloofar-kappil/" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/6472863359" class="social-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/alexchen" class="social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                    <!-- <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a> -->
+                </div>
+                <div class="copyright">
+                    <p>© 2025 Fathima Niloofar. All rights reserved. Built with passion and modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
