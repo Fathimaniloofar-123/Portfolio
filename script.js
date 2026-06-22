@@ -1,6 +1,5 @@
 // Portfolio Website JavaScript
 
-// Data for projects, skills, education, experience, and certificates
 const portfolioData = {
     webProjects: [
         {
@@ -61,21 +60,15 @@ const portfolioData = {
     mobileProjects: [
         {
             id: 7,
-            name: "Tattoo loree",
-            description: "Cross-platform mobile app for tattoo shop, with multiple pages, luxurious layout and smooth navigation",
-            image: "Images/tattoo.png",
-            technologies: ["Flutter", "Firebase"],
+            name: "Smart Traffic Light Controller",
+            description: "This project is an IoT-based Smart Traffic Light Management System built using an ESP32, ultrasonic sensors, and the Blynk IoT platform. The system dynamically controls traffic signals based on real-time vehicle detection, helping reduce unnecessary waiting times and improve traffic flow at an intersection.",
+            image: "Images/traffic.jpg",
+            technologies: ["Arduino IDE", "Sensors", "Blynk IoT Platform", "ESP32"],
+            demoUrl: "https://github.com/Fathimaniloofar-123/Smart-Density-Based-Traffic-Controller.git",
             
             
         },
-        {
-            id: 5,
-            name: "Attandance Monitoring System",
-            description: "Mobile app for attendance monitoring using facial recognition technology, enabling secure and efficient attendance tracking for organizations.",
-            image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
-            technologies: ["Java", "Python", "MySQL"],
-            
-        },
+        
         
     ],
 
@@ -105,13 +98,7 @@ const portfolioData = {
     ],
 
     experience: [
-        {
-            id: 1,
-            title: "Application Developer",
-            company: "Freelance",
-            period: "2024 - 2025",
-            description: "DEveloped cross-platform mobile applications using Flutter, integrating RESTful APIs and third-party services. Delivered multiple projects with a focus on performance, usability, and client satisfaction."
-        },
+        
         {
             id: 2,
             title: "Full Stack Web Developer",
@@ -123,22 +110,28 @@ const portfolioData = {
     ],
 
     frontendSkills: [
-        { name: "Html", level: "Advanced", percentage: 50 },
-        { name: "Flutter (Dart)", level: "Advanced", percentage: 90 },
-        { name: "JavaScript", level: "Intermediate", percentage: 75 },
-        { name: "CSS", level: "Expert", percentage: 98 },
-        { name: "Wordpress ", level: "Advanced", percentage: 98 },
-        { name: "Shopify", level: "Intermediate", percentage: 70 }
+       { name: "HTML", level: "Advanced", percentage: 50 },
+      { name: "JavaScript", level: "Intermediate", percentage: 75 },
+      { name: "CSS", level: "Expert", percentage: 98 },
+      { name: "WordPress", level: "Advanced", percentage: 98 },
+      { name: "Shopify", level: "Intermediate", percentage: 70 }
 
     ],
 
     backendSkills: [
-        { name: "Python", level: "Advanced", percentage: 90 },
-        { name: "C", level: "Advanced", percentage: 88 },
-        { name: "Java", level: "Intermediate", percentage: 80 },
-        { name: "PHP", level: "Intermediate", percentage: 70 },
-        { name: "Firebase", level: "Advanced", percentage: 90 },
-        { name: "MySQL", level: "Advanced", percentage: 92 }
+         { name: "Python", level: "Advanced", percentage: 90 },
+      { name: "Java", level: "Intermediate", percentage: 80 },
+      { name: "PHP", level: "Intermediate", percentage: 70 },
+      { name: "MySQL", level: "Advanced", percentage: 92 },
+      { name: "Firebase", level: "Advanced", percentage: 90 },
+      { name: "Flutter (Dart)", level: "Advanced", percentage: 90 },
+      { name: "ESP32", level: "Advanced", percentage: 90 },
+      { name: "Arduino IDE", level: "Advanced", percentage: 90 },
+       { name: "Sensor Integration", level: "Advanced", percentage: 88 },
+        { name: "Blynk IoT Platform", level: "Advanced", percentage: 92 },
+        { name: "WiFi Communication (MQTT basics)", level: "Intermediate", percentage: 75 },
+        { name: "Embedded C Basics", level: "Intermediate", percentage: 78 },
+        { name: "Real-time Data Processing", level: "Intermediate", percentage: 80 },
         
     ],
 
@@ -152,61 +145,8 @@ const portfolioData = {
         { name: "phpMyAdmin", level: "Advanced", percentage: 90 }
     ],
 
-    technologies: [
-    { icon: "devicon-php-plain colored", name: "PHP" },
-    { icon: "devicon-java-plain colored", name: "Java" },
-    { icon: "devicon-python-plain colored", name: "Python" },
-    { icon: "devicon-flutter-plain colored", name: "Flutter" },
-    { icon: "devicon-figma-plain colored", name: "Figma" },
-    { icon: "devicon-git-plain colored", name: "Git" }
-    ],
+    
 
-    // certificates: [
-    //     {
-    //         id: 1,
-    //         title: "AWS Certified Developer - Associate",
-    //         organization: "Amazon Web Services (AWS)",
-    //         issueDate: "Issued: March 2023 • Valid until: March 2026",
-    //         description: "Demonstrates expertise in developing and maintaining applications on the AWS platform, including deployment, debugging, and optimization.",
-    //         icon: "fab fa-aws",
-    //         iconColor: "color: #FF9900",
-    //         borderColor: "border-left-color: #3b82f6",
-    //         verifyUrl: "#"
-    //     },
-    //     {
-    //         id: 2,
-    //         title: "Google Professional Cloud Developer",
-    //         organization: "Google Cloud",
-    //         issueDate: "Issued: January 2023 • Valid until: January 2025",
-    //         description: "Validates ability to design, build, and deploy scalable applications using Google Cloud technologies and best practices.",
-    //         icon: "fab fa-google",
-    //         iconColor: "color: #4285F4",
-    //         borderColor: "border-left-color: #10b981",
-    //         verifyUrl: "#"
-    //     },
-    //     {
-    //         id: 3,
-    //         title: "MongoDB Certified Developer",
-    //         organization: "MongoDB University",
-    //         issueDate: "Issued: November 2022 • Valid until: November 2024",
-    //         description: "Demonstrates proficiency in MongoDB development including data modeling, querying, indexing, and application development.",
-    //         icon: "fas fa-leaf",
-    //         iconColor: "color: #47A248",
-    //         borderColor: "border-left-color: #8b5cf6",
-    //         verifyUrl: "#"
-    //     },
-    //     {
-    //         id: 4,
-    //         title: "Meta Front-End Developer Professional",
-    //         organization: "Meta (Facebook)",
-    //         issueDate: "Issued: September 2022 • No expiration",
-    //         description: "Comprehensive program covering React, JavaScript, HTML/CSS, and modern front-end development practices and tools.",
-    //         icon: "fab fa-facebook",
-    //         iconColor: "color: #1877F2",
-    //         borderColor: "border-left-color: #ef4444",
-    //         verifyUrl: "#"
-    //     }
-    // ]
 };
 
 // DOM Content Loaded
@@ -337,7 +277,7 @@ function getProjectButtonText(project) {
     if (project.liveUrl) return 'Live Demo';
     if (project.appStoreUrl) return 'App Store';
     if (project.playStoreUrl) return 'Play Store';
-    if (project.demoUrl) return 'Demo';
+    if (project.demoUrl) return 'GitHub Repo';
     return 'View Project';
 }
 
